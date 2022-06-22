@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Fixgaia
+    </title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+    <!-- ==== WOW JS ==== -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+  <body>
+    <!-- ====== Navbar Section Start -->
+    <div
+      class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-white"
+    >
+      <div class="container">
+        <div class="relative -mx-4 flex items-center justify-between">
+          <div class="max-w-full px-4" style="width: 13rem;">
+            <a href="index.html" class="navbar-logo block w-full py-5">
+              <img
+                src="assets/images/logo/fixgaia_logo_vert.png"
+                alt="logo"
+                class="header-logo w-full"
+              />
+            </a>
+          </div>
+          <div class="flex  items-center justify-between px-4">
+            <div>
+              <button
+                id="navbarToggler"
+                class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+              >
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px]" style="background-color: #000e3d";
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px " style="background-color: #000e3d";
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] " style="background-color: #000e3d";
+                ></span>
+              </button>
+              <nav
+                id="navbarCollapse"
+                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
+              >
+              
+                <ul class="block lg:flex">
+                  <li class="group relative ">
+                    <a
+                      href="#home"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                    >
+                      Início
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="#about"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Sobre nós
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="#contactos"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Contactos
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="#marcas"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Marcas
+                    </a>
+                  </li>
+
+                  <!--TEMPLATE MENU DROP-->
+
+                  <!-- <li class="submenu-item group relative">
+                    <a
+                      href="javascript:void(0)"
+                      class="relative mx-8 flex py-2 text-base text-dark after:absolute after:right-1 after:top-1/2 after:mt-[-2px] after:h-2 after:w-2 after:-translate-y-1/2 after:rotate-45 after:border-b-2 after:border-r-2 after:border-current group-hover:text-primary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:after:right-0 lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Pages
+                    </a>
+                    <div
+                      class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                    >
+                      <a
+                        href="about.html"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
+                      >
+                        About Page
+                      </a>
+                    </div>
+                  </li> -->
+
+                </ul>
+              </nav>
+            </div>
+
+            <!--TEMPLATE BUTÕES-->
+
+            <!-- <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
+              <a
+                href="signin.html"
+                class="loginBtn py-3 px-7 text-base font-medium text-white hover:opacity-70"
+              >
+                Sign In
+              </a>
+              <a
+                href="signup.html"
+                class="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
+              >
+                Sign Up
+              </a>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== Navbar Section End -->
+
+    <!-- ====== Hero Section Start -->
+    <div
+      id="home"
+      class="relative overflow-hidden bg-hero  pt-[120px] md:pt-[130px] lg:pt-[160px]"
+    >
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="w-full px-4">
+            <div
+              class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
+              data-wow-delay=".2s"
+            >
+              <h1
+                class="mb-8 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug"
+              >
+                Comércio de Ferragens
+              </h1>
+              <p
+                class="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
+              >
+              Material para carpintaria e marcenaria, indústria de mobiliário e construção, ferramentas de trabalho e muito mais!
+              Fornecemos materiais em metal, alumínio, aço inox, entre outros.
+              </p>
+
+              <!-- MAIN BUTTON TEMPLATE-->
+
+              <!-- <ul class="mb-10 flex flex-wrap items-center justify-center">
+                <li>
+                  <a
+                    href="https://links.tailgrids.com/play-download"
+                    class="inline-flex items-center justify-center rounded-lg bg-white py-4 px-6 text-center text-base font-medium text-dark transition duration-300 ease-in-out hover:text-primary hover:shadow-lg sm:px-10"
+                  >
+                    Download Now
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/tailgrids/play-tailwind"
+                    target="_blank"
+                    class="flex items-center py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:opacity-70 sm:px-10"
+                  >
+                    Star on Github
+                    <span class="pl-2">
+                      <svg
+                        width="20"
+                        height="8"
+                        viewBox="0 0 20 8"
+                        class="fill-current"
+                      >
+                        <path
+                          d="M19.2188 2.90632L17.0625 0.343819C16.875 0.125069 16.5312 0.0938193 16.2812 0.281319C16.0625 0.468819 16.0312 0.812569 16.2188 1.06257L18.25 3.46882H0.9375C0.625 3.46882 0.375 3.71882 0.375 4.03132C0.375 4.34382 0.625 4.59382 0.9375 4.59382H18.25L16.2188 7.00007C16.0312 7.21882 16.0625 7.56257 16.2812 7.78132C16.375 7.87507 16.5 7.90632 16.625 7.90632C16.7812 7.90632 16.9375 7.84382 17.0312 7.71882L19.1875 5.15632C19.75 4.46882 19.75 3.53132 19.2188 2.90632Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul> -->
+
+              <div class="wow fadeInUp text-center" data-wow-delay=".3s">
+                <img
+                  src="assets/images/hero/material.png"
+                  alt="image"
+                  class="mx-auto w-full max-w-[250px]  transition duration-300 ease-in-out hover:opacity-100" 
+                /><br><br>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== Hero Section End -->
+
+    <!-- ====== Features Section Start -->
+
+    <!-- <section class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
+    </section> -->
+    <!-- ====== Features Section End -->
+
+    <!-- ====== About Section Start -->
+    <section
+      id="about"
+      class="bg-[#f3f4fe] pt-20 pb-20 lg:pt-[120px] lg:pb-[120px]"
+    >
+      <div class="container">
+        <div class="wow fadeInUp bg-white" data-wow-delay=".2s">
+          <div class="-mx-4 flex flex-wrap">
+            <div class="w-full px-4">
+              <div
+                class="items-center justify-between overflow-hidden border lg:flex"
+              >
+                <div
+                  class="w-full py-12 px-7 sm:px-12 md:p-16 lg:max-w-[565px] lg:py-9 lg:px-16 xl:max-w-[640px] xl:p-[70px]"
+                >
+                  <span
+                    class="mb-4 inline-block  py-1 text-sm font-medium " style="padding-left: 0.1rem;"
+                  >
+                    Sobre nós
+                  </span>
+                  <h2
+                    class="mb-6 text-3xl font-bold text-dark sm:text-4xl sm:leading-snug 2xl:text-[40px]"
+                  >
+                    Fundada em 1997
+                  </h2>
+                  <p class="mb-9 text-base leading-relaxed text-body-color">
+                  Com o nome do seu sócio gerente, Manuel Luís de Sousa Leitão, a FIXGAIA nasceu em 2007 e desde então tem vindo a alargar a sua atividade com novos produtos e serviços.
+                  Com sede em V.N.de Gaia e armazém em Vandoma, Paredes, comercializa e distribui as principais marcas para a indústria de carpintaria, mobiliário e construção civil.
+                  
+                  </p>
+                  <p class="mb-9 text-base leading-relaxed text-body-color">
+                    Distingue-se pela sua componente humana, com uma vasta experiência e conhecimento do mercado adquirida ao longo destes anos, pelos seus serviços e a uma cuidada seleção dos produtos comercializados das principais marcas no mercado.
+                    Dá todo o tipo de assistência e aconselhamento na escolha dos produtos que melhor satisfaçam os n/ clientes, bem como na assistência pós venda.
+                  </p>
+  
+                </div>
+                <div class="text-center">
+                  <div class="relative z-10 inline-block">
+                    <img
+                      src="assets/images/about/sobrenos.png"
+                      alt="image"
+                      class="mx-auto lg:ml-auto"
+                    />
+                    <br>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== About Section End -->
+
+
+
+    <!-- ====== Testimonials Start ====== -->
+    <section id="contactos" class="pt-20 md:pt-[120px]">
+      <div class="container px-4">
+        <div class="flex flex-wrap">
+          <div class="mx-4 w-full">
+            <div class="mx-auto mb-[60px] max-w-[620px] text-center lg:mb-20">
+           
+              <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]">
+                Contacte-nos
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/2">
+            
+            <div
+              class="ud-single-testimonial wow fadeInUp mb-12 bg-white p-8 shadow-testimonial"
+              data-wow-delay=".1s
+              "
+            >
+            <p class="text-base tracking-wide text-body-color">
+              Sede
+            </p><br>
+              <div class="ud-testimonial-content mb-6">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.612348954848!2d-8.619285084335456!3d41.121156520419454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24652a8979f1d9%3A0x72c0cbdfc203d139!2sR.%20P%C3%AAro%20Vaz%20de%20Caminha%20222%2C%204400-629%20Vila%20Nova%20de%20Gaia!5e0!3m2!1spt-PT!2spt!4v1655636740139!5m2!1spt-PT!2spt"
+                class="w-full" height="350" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+            
+              </div>
+              <br>
+              <div class=" flex flex-wrap  items-center md:w-1/1 lg:w-1/1">
+                <div
+                  class="ud-testimonial-image mr-5 h-[30px] w-[30px] overflow-hidden "
+                >
+                  <img
+                    src="assets/images/testimonials/location.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta overflow-hidden">
+                  <h4 class="text-sm font-semibold w-full">Rua Pêro Vaz de Caminha 222 - Habitação 3.3</h4>
+                 
+                  <h4 class="text-xs">Vila Nova de Gaia</h4>
+                </div>
+              </div>
+              <br>
+              <div class=" flex flex-wrap  items-center md:w-1/2 lg:w-1/2">
+                <div
+                  class="ud-testimonial-image mr-5 h-[30px] w-[30px] overflow-hidden "
+                >
+                  <img
+                    src="assets/images/testimonials/phone.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4 class="text-xs">Telefone</h4> <h4 class="text-sm font-semibold">223 705 742</h4>
+                </div>
+              </div>
+            <br>
+              <div class="flex flex-wrap items-center md:w-1/2 lg:w-1/2">
+                <div
+                  class="ud-testimonial-image mr-5 h-[30px] w-[30px] overflow-hidden "
+                >
+                  <img
+                    src="assets/images/testimonials/sphone.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4 class="text-xs">Telemóvel</h4> <h4 class="text-sm font-semibold">919 703 838</h4>
+                </div>
+              </div>
+
+              <br>
+              <div class="flex flex-wrap items-center md:w-1/2 lg:w-1/2">
+                <div
+                  class="ud-testimonial-image mr-5 h-[30px] w-[30px] overflow-hidden "
+                >
+                  <img
+                    src="assets/images/testimonials/mail.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4 class="text-xs">E-mail</h4> <h4 class="text-sm font-semibold">geral@fixgaia.pt</h4>
+                </div>
+              </div>
+              
+
+              <br>
+              <div class="flex flex-wrap items-center md:w-1/2 lg:w-1/2">
+                <div
+                  class="ud-testimonial-image mr-5 h-[30px] w-[30px] overflow-hidden "
+                >
+                  <img
+                    src="assets/images/testimonials/fax.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4 class="text-xs">Fax</h4> <h4 class="text-sm font-semibold">223 744 207</h4>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+         
+       
+
+          <div class="w-full px-4 md:w-1/2 lg:w-1/2">
+            
+            <div
+              class="ud-single-testimonial wow fadeInUp mb-12 bg-white p-8 shadow-testimonial"
+              data-wow-delay=".1s
+              "
+            >
+            <p class="text-base tracking-wide text-body-color">
+              Armazém
+            </p><br>
+              <div class="ud-testimonial-content mb-6">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24015.879260925354!2d-8.41306907413912!3d41.200302614224654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd248937a1ead163%3A0x3e9c1bdb2060a533!2sVandoma!5e0!3m2!1spt-PT!2spt!4v1655637140237!5m2!1spt-PT!2spt"
+                class="w-full" height="350" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+            
+              </div>
+
+              <br>
+              <div class="flex flex-wrap items-center md:w-1/2 lg:w-1/2">
+                <div
+                  class="ud-testimonial-image mr-5 h-[30px] w-[30px] overflow-hidden "
+                >
+                  <img
+                    src="assets/images/testimonials/location.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                   <h4 class="text-sm font-semibold">Vandoma, Paredes</h4>
+                </div>
+              </div>
+             
+            <br>
+              <div class="flex flex-wrap items-center md:w-1/2 lg:w-1/2">
+                <div
+                  class="ud-testimonial-image mr-5 h-[30px] w-[30px] overflow-hidden "
+                >
+                  <img
+                    src="assets/images/testimonials/sphone.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4 class="text-xs">Telemóvel</h4> <h4 class="text-sm font-semibold">912 534 417</h4>
+                </div>
+              </div>
+
+              <br>
+              <div class="flex flex-wrap items-center md:w-1/2 lg:w-1/2">
+                <div
+                  class="ud-testimonial-image mr-5 h-[30px] w-[30px] overflow-hidden "
+                >
+                  <img
+                    src="assets/images/testimonials/mail.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4 class="text-xs">E-mail</h4> <h4 class="text-sm font-semibold">geral@fixgaia.pt</h4>
+                </div>
+              </div>
+              <br>
+              <div class="flex flex-wrap items-center md:w-1/2 lg:w-1/2">
+                <div
+                  class="ud-testimonial-image mr-5 h-[30px] w-[30px] overflow-hidden "
+                >
+                  <img
+                    src="assets/images/testimonials/fax.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4 class="text-xs">Fax</h4> <h4 class="text-sm font-semibold">223 744 207</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+         
+        </div>
+        <div class="flex flex-wrap" id="marcas">
+          <div class="mx-4 w-full">
+            <div class="wow fadeInUp" data-wow-delay=".2s">
+              <div class="ud-title mb-8">
+                <h6
+                  class="relative inline-flex items-center text-sm font-normal text-body-color"
+                >
+                  Marcas Principais
+                 
+                </h6>
+              </div>
+              <div class="ud-brands-logo flex flex-wrap items-center">
+                <div class="ud-single-logo mr-10 mb-5 max-w-[140px]">
+                  <a
+                    href="https://www.hafele.com.de/en/"
+                    target="_blank"
+                    rel="nofollow noopner"
+                  >
+                    <img
+                      src="assets/images/brands/haefele_logo.png"
+                      alt="tailgrids"
+                      class="grayscale duration-300 hover:filter-none"
+                    />
+                  </a>
+                </div>
+                <div class="ud-single-logo mr-10 mb-5 max-w-[140px]">
+                  <a
+                    href="https://www.emuca.pt/"
+                    target="_blank"
+                    rel="nofollow noopner"
+                  >
+                    <img
+                      src="assets/images/brands/emuca.png"
+                      alt="ayroui"
+                      class="grayscale duration-300 hover:filter-none"
+                    />
+                  </a>
+                </div>
+                <div class="ud-single-logo mr-10 mb-5 max-w-[120px]">
+                  <a
+                    href="https://www.hawa.com/"
+                    target="_blank"
+                    rel="nofollow noopner"
+                  >
+                    <img
+                      src="assets/images/brands/Hawa_Logo.png"
+                      alt="uideck"
+                      class="grayscale duration-300 hover:filter-none"
+                    />
+                  </a>
+                </div>
+                <div class="ud-single-logo mr-10 mb-5 max-w-[140px]">
+                  <a
+                    href="http://www.tupai.pt/?lang=pt"
+                    target="_blank"
+                    rel="nofollow noopner"
+                  >
+                    <img
+                      src="assets/images/brands/tupai.png"
+                      alt="graygrids"
+                      class="grayscale duration-300 hover:filter-none"
+                    />
+                  </a>
+                </div>
+                <div class="ud-single-logo mr-10 mb-5 max-w-[120px]">
+                  <a
+                    href="https://www.palbox.es/"
+                    target="_blank"
+                    rel="nofollow noopner"
+                  >
+                    <img
+                      src="assets/images/brands/pbx.png"
+                      alt="lineicons"
+                      class="grayscale duration-300 hover:filter-none"
+                    />
+                  </a>
+                </div>
+                <div class="ud-single-logo mr-10 mb-5 max-w-[140px]">
+                  <a
+                    href="http://www.tectushinges.com/"
+                    target="_blank"
+                    rel="nofollow noopner"
+                  >
+                    <img
+                      src="assets/images/brands/TECTUS.png"
+                      alt="lineicons"
+                      class="grayscale duration-300 hover:filter-none"
+                    />
+                  </a>
+                </div>
+                <div class="ud-single-logo mr-10 mb-5 max-w-[140px]">
+                  <a
+                    href="https://www.jnf.pt/pt/"
+                    target="_blank"
+                    rel="nofollow noopner"
+                  >
+                    <img
+                      src="assets/images/brands/jnf.png"
+                      alt="lineicons"
+                      class="grayscale duration-300 hover:filter-none"
+                    />
+                  </a>
+                </div>
+                <div class="ud-single-logo mr-10 mb-5 max-w-[140px]">
+                  <a
+                    href="https://verduweb.com/"
+                    target="_blank"
+                    rel="nofollow noopner"
+                  >
+                    <img
+                      src="assets/images/brands/verdu.png"
+                      alt="lineicons"
+                      class="grayscale duration-300 hover:filter-none"
+                    />
+                  </a>
+                </div>
+                <div class="ud-single-logo mr-10 mb-5 max-w-[120px]">
+                  <a
+                    href="https://www.kesseboehmer.world/en/"
+                    target="_blank"
+                    rel="nofollow noopner"
+                  >
+                    <img
+                      src="assets/images/brands/KESSEBOEHMER.png"
+                      alt="lineicons"
+                      class="grayscale duration-300 hover:filter-none"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ====== Testimonials End ====== -->
+
+  
+
+    <!-- ====== Footer Section Start -->
+    <footer
+      class="wow fadeInUp relative z-10 bg-black  "
+      data-wow-delay=".15s"
+    >
+      <!-- <div class="container">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
+            <div class="mb-10 w-full">
+              <a
+                href="javascript:void(0)"
+                class="mb-6 inline-block max-w-[160px]"
+              >
+                <img
+                  src="assets/images/footer/fixgaia_white.png"
+                  alt="logo"
+                  class="max-w-full"
+                />
+              </a>
+              <p class="mb-7 text-base text-[#f3f4fe]">
+                A responder às necessidades dos profissionais da construção civil e indústria.
+
+              </p>
+              Flexbox para icones
+              <div class="-mx-3 flex items-center">
+                Caixa SVG para icones
+                <a
+                  href="javascript:void(0)"
+                  class="px-3 text-[#dddddd] hover:text-white"
+                >
+                
+                  <svg
+                    width="10"
+                    height="18"
+                    viewBox="0 0 10 18"
+                    class="fill-current"
+                  >
+                   
+                  </svg> 
+                </a> 
+              </div> 
+            </div>
+          </div>
+   
+          Bloco de links
+          <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+            <div class="mb-10 w-full">
+              <h4 class="mb-9 text-lg font-semibold text-white">
+                Our Products
+              </h4>
+              <ul>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
+                  >
+                    LineIcons
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
+                  >
+                    Ecommerce HTML
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
+                  >
+                    Ayro UI
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
+                  >
+                    PlainAdmin
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+      </div> -->
+
+      <div class="mt-12 lg:mt-[60px]" style="padding-top: 2.2rem;">
+        <div class="container">
+          <div class="-mx-4 flex flex-wrap">
+            <div class="w-full px-4 md:w-2/3 lg:w-1/2">
+              <div class="my-1">
+                <div
+                  class="-mx-3 flex items-center justify-center md:justify-start"
+                >
+                <a
+                href="javascript:void(0)"
+                class="mb-6 inline-block max-w-[160px]"
+              >
+                <img
+                  src="assets/images/footer/fixgaia_white.png"
+                  alt="logo"
+                  class="max-w-full"
+                />
+                
+              </a>
+              <p class="text-base text-sm text-white" style="padding-bottom: 1rem;"> &emsp;&reg; <script>document.write(new Date().getFullYear())</script> </p>
+            
+                </div>
+              </div>
+            </div>
+      
+              
+              
+
+            <div class="w-full px-4 md:w-1/2 lg:w-1/2">
+              <div class="my-1 flex justify-center md:justify-end">
+                <p class="text-base text-[#f3f4fe]">
+                  Desenvolvido por João Rocha
+                 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+    </footer>
+    <!-- ====== Footer Section End -->
+
+    <!-- ====== Back To Top Start -->
+    <!-- <a
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+    >
+      <span
+        class="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"
+      ></span>
+    </a> -->
+    <!-- ====== Back To Top End -->
+
+    <!-- ====== All Scripts -->
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+    </script>
+  </body>
+</html>
